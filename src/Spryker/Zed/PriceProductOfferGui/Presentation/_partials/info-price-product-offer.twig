@@ -2,7 +2,7 @@
     {% block widget_content %}
         {% if productOffer is not defined or productOffer.prices.count < 1 %}
             <div class="row form-group">
-                <div class="col-xs-12"><b>{{ 'This offer has no prices.' | trans }}</b></div>
+                <div class="col-12"><b>{{ 'This offer has no prices.' | trans }}</b></div>
             </div>
         {% else %}
             {% set priceModeGross = 'GROSS_MODE' %}
